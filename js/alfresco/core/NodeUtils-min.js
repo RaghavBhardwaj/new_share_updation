@@ -1,0 +1,1 @@
+define(["dojo/_base/lang"],function(b){return{processNodeRef:function a(d){try{var f=d.replace(":/",""),c=f.split("/");return({nodeRef:d,storeType:c[0],storeId:c[1],id:c[2],uri:f,toString:function(){return d}})}catch(g){g.message="Invalid nodeRef: "+d;throw g}}}});
